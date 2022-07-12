@@ -50,7 +50,7 @@ public class Light {
         this.left = left;
     }
 
-    public boolean isOnOff() {
+    public boolean getOnOff() {
         return onOff;
     }
 

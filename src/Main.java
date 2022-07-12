@@ -100,7 +100,7 @@ public class Main {
 
                     display = display + " " + (i + 1);
 
-                    if (lyslenke[i].onOff){
+                    if (lyslenke[i].getOnOff()){
                         output = output + " 1";
                     }else {
                         output = output + " 0";
@@ -122,7 +122,7 @@ public class Main {
     public static boolean chainOfLightsOn(Light[] chain){
         boolean output = true;
         for (int i=0; i<chain.length; i++){
-            if (chain[i].onOff == false){
+            if (chain[i].getOnOff() == false){
                 output = false;
             }
         }
