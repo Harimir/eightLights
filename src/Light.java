@@ -3,17 +3,6 @@ public class Light {
     Light right;
     Light left;
 
-    // arrayposition and its methods are not nessesary but are kept so as to make sense of out-comented testing code in Main
-    public int getArrayposition() {
-        return arrayposition;
-    }
-
-    public void setArrayposition(int arrayposition) {
-        this.arrayposition = arrayposition;
-    }
-
-    int arrayposition;
-
     public void click(){
         if (onOff == false){
             this.onOff = true;

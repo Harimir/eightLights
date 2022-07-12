@@ -18,9 +18,6 @@ public class Main {
             nekst.setLeft(lyslenke[i]);
             lyslenke[i].setRight(nekst);
 
-            //testing value
-            lyslenke[i].setArrayposition(i);
-
             //System.out.println("light " + i + " is " + lyslenke[i].onOff);
         }
         last.setRight(first);
