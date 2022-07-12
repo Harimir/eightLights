@@ -2,44 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        /* cheking the light does SOMETHING
-        System.out.println("i exist");
-        Light testlys = new Light();
-        System.out.println(testlys.onOff);
-        testlys.click();
-        System.out.println(testlys.onOff);
-         */
-
-        /* chekking Light's functionalety
-        Light first = new Light(true);
-        Light second = new Light(false);
-        Light third = new Light(false);
-        Light forth = new Light(false);
-        Light fifth = new Light(true);
-
-
-        first.setLeft(fifth);
-        first.setRight(second);
-
-        second.setLeft(first);
-        second.setRight(third);
-
-        third.setLeft(second);
-        third.setRight(forth);
-
-        forth.setLeft(third);
-        forth.setRight(fifth);
-
-        fifth.setLeft(forth);
-        fifth.setRight(first);
-
-        System.out.println(first.onOff + " " + second.onOff + " " + third.onOff + " " + forth.onOff + " " + fifth.onOff);
-
-        third.flip();
-
-        System.out.println(first.onOff + " " + second.onOff + " " + third.onOff + " " + forth.onOff + " " + fifth.onOff);
-
-         */
 
         Light lyslenke[] = new Light[8];
         int moves = 0;
@@ -63,23 +25,6 @@ public class Main {
         }
         last.setRight(first);
         lyslenke[0].setLeft(lyslenke[(lyslenke.length-1)]);
-        /*      testing that neibors are propperly asigned
-        int i = 0;
-        System.out.println("array spot nr " + lyslenke[i].getArrayposition() + "  is "+  lyslenke[i].onOff + " its neibors are " + lyslenke[i].left.arrayposition +
-                " on the left, and " + lyslenke[i].right.arrayposition + " on the right");
-        i = 3;
-        System.out.println("array spot nr " + lyslenke[i].getArrayposition() + "  is "+  lyslenke[i].onOff + " its neibors are " + lyslenke[i].left.arrayposition +
-                " on the left, and " + lyslenke[i].right.arrayposition + " on the right");
-
-        i = 5;
-        System.out.println("array spot nr " + lyslenke[i].getArrayposition() + "  is "+  lyslenke[i].onOff + " its neibors are " + lyslenke[i].left.arrayposition +
-                " on the left, and " + lyslenke[i].right.arrayposition + " on the right");
-
-        i = 7;
-        System.out.println("array spot nr " + lyslenke[i].getArrayposition() + "  is "+  lyslenke[i].onOff + " its neibors are " + lyslenke[i].left.arrayposition +
-                " on the left, and " + lyslenke[i].right.arrayposition + " on the right");
-
- */
 
         // lag en while loop som leser input, skriver ut det nåværende resultat og når alle Lamp i arrayet er true avslutter
         while (chainOfLightsOn(lyslenke) == false){
